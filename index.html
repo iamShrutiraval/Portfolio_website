@@ -7,78 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Shruti Raval Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(28, 1, 45);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            height: 80px;
-            background-color: rgb(51, 6, 79);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(145, 101, 220);
-            font-size: 1.03rem;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 3rem;
-        }
-
-        .rightSection img {
-            width: 100%;
-            /* margin: 30px 0;         */
-        }
-
-        .purple {
-            color: rgb(166, 111, 218);
-        }
-        #element{
-            color: rgb(166, 111, 218);
-        }
-    </style>
 </head>
 
 <body>
@@ -87,11 +17,10 @@
             <div class="left">Shruti Raval's Protfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact me</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#2">About</a></li>
+                    <li><a href="#3">Language</a></li>
+                    <li><a href="#4">Projects</a></li>
                 </ul>
             </div>
         </nav>
@@ -99,27 +28,101 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">Hii,My name is
-                <span class="purple">Shruti Raval</span>
-                <div>and I am</div>
+                <span class="purple">Shruti</span>
+                <div>and I am passionaates</div>
                 <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="Background-img.png"></img>
             </div>
         </section>
+        <hr id="2">
         <section class="secondSection">
-            
+            <span class="text-grey">Objective</span>
+            <u><h1>About me</h1></u>
+            <div class="box">
+                <div class="about-text">
+                    <h1>
+                        Completed Bachelor of Computer Application (BCA) with distinction from Gujarat University and
+                        currently pursuing a Master of computer applications (MCA) from JG university. I am seeking
+                        opportunities to join a company that can help me in enhancing my skills, strengthening my
+                        knowledge,
+                        and realizing my potential. I am willing to explore a wide variety of opportunities that can
+                        help me
+                        gain perspective.</h1>
+                </div>
+            </div>
+        </section>
+        <hr id="3">
+        <section class="thiredSection">
+            <span class="text-grey">Which Languages I know </span>
+            <u><h1>Technical Skill</h1></u>
+            <div class="box">
+                <div class="ul">
+                    <ul>
+                        <li>Known Programming Languages are as below (core): -</li>
+                        <div class="innerul">
+                            <ul>
+                                <li>JAVA</li>
+                                <li>Linux</li>
+                                <li>WordPress</li>
+                            </ul>
+                        </div>
+                        <li>OOPS</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>PHP(Laravel)</li>
+                        <li>MySQL Database</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr id="4">
+        <section class="fourSection">
+            <span class="text-grey">Worked on this project</span>
+            <u><h1>Projects</h1></u>
+            <div class="box">
+                <div class="about-text">
+                    <h1>
+                        Made an E-Commerce website in which created front end with the help of HTML(Bootstrap)
+                        and used MySQL database and connects back end and front end with help of PHP</h1>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="flex">
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Shruti Raval's portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <h3>contact me</h3>
+                    <ul>
+                        <li>Email<a href="mailto:shrutiraval148@gmail.com">shrutiraval148@gmail.com</a></li>
+                        <li>Contact:-7597184567</li>
+                    </ul>
+
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li><a href="mailto:shrutiraval148@gmail.com"><img src="gmail-icon.png" class="gmail-icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/shruti-raval-11770022a/"><img src="linkdIn-logo.png" class="linkedin-logo"></a></li>
+                        <li><a href="https://github.com/iamShrutiraval"><img src="github-logo.png" class="github-logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Designer' ,'Back-end Developer'],
+            strings: ['Web Developer', 'Web Designer', 'Back-end Developer'],
             typeSpeed: 60,
         });
     </script>
-    
+
 </body>
 
 </html>
